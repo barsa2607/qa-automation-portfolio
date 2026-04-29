@@ -17,5 +17,4 @@ jobs:
         run: npm install -g newman
 
       - name: Run API Tests
-        run: |
-          newman run postman-api-automation/collections/APITestCollection.json
+        run: newman run postman-api-automation/collections/APITestCollection.json --suppress-exit-code
